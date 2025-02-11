@@ -1,43 +1,33 @@
-# Gateway Device Application (Connected Devices)
+# Constrained Device Application (Connected Devices)
 
 ## Lab Module 01
 
-Be sure to implement all the PIOT-GDA-* issues (requirements).
+Be sure to implement all the PIOT-CDA-* issues (requirements).
 
 ### Description
 
-NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
+The Constrained Device Application (CDA) is responsible for collecting, processing, and transmitting data from resource-limited IoT devices. 
+It typically runs on embedded systems or edge devices that have limited processing power, memory, and network bandwidth.
 
-What does your implementation do? 
-
-How does your implementation work?
+The implementation focuses on efficient data acquisition, lightweight communication protocols (such as MQTT or CoAP), 
+and optimized resource management. The CDA interacts with sensors and actuators to monitor environmental conditions 
+and send real-time data to the Gateway Device Application (GDA) or directly to cloud services.
 
 ### Code Repository and Branch
 
-NOTE: Be sure to include the branch.
-
-URL: 
-
+URL: [https://github.com/CarlosCarballido/python-components](https://github.com/CarlosCarballido/python-components)  
+Branch: `default`
 
 ### Unit Tests Executed
 
-NOTE: The instructor will execute your unit tests. You only need to list each test case below
-(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
-since you need to ensure you haven't introduced regressions.
-
-- 
-- 
-- 
+- ConfigUtilTest
+- DataUtilTest
+- SensorManagerTest
 
 ### Integration Tests Executed
 
-NOTE: The instructor will execute most of your integration tests using their own environment, with
-some exceptions (such as your cloud connectivity tests). In such cases, they'll review
-your code to ensure it's correct. As for the tests you execute, you only need to list each
-test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
-
-- 
-- 
-- 
+- SensorSimAdapterManagerTest
+- DeviceDataManagerTest
+- CloudConnectivityTest
 
 EOF.
