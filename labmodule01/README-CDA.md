@@ -1,34 +1,58 @@
-# Gateway Device Application (Connected Devices)
+# Constrained Device Application (Connected Devices)
 
 ## Lab Module 01
 
-Be sure to implement all the PIOT-GDA-* issues (requirements).
+Be sure to implement all the PIOT-CDA-* issues (requirements).
 
 ### Description
 
-The Gateway Device Application (GDA) serves as an intermediary between constrained IoT devices and cloud-based services. 
-It acts as a bridge that collects, processes, and forwards data from constrained devices to a remote cloud infrastructure 
-or another processing unit. 
+The Constrained Device Application (CDA) is designed for IoT devices with limited resources. 
+It is responsible for collecting sensor data, processing it locally, and sending relevant information to 
+the Gateway Device Application (GDA) or cloud services. The CDA ensures efficient resource management and uses 
+lightweight communication protocols like MQTT or CoAP for data transmission.
 
-The implementation involves setting up communication protocols, data management strategies, and integration with 
-connected sensors or actuators. The GDA ensures reliable data transmission, maintains logs of the exchanged information, 
-and applies necessary transformations to maintain compatibility between different devices in the IoT ecosystem.
+This implementation is developed in Python and focuses on optimizing sensor interactions, handling real-time data 
+processing, and providing a reliable connection between edge devices and the broader IoT network.
 
 ### Code Repository and Branch
 
-URL: [https://github.com/CarlosCarballido/java-components](https://github.com/CarlosCarballido/java-components)  
+URL: [https://github.com/CarlosCarballido/python-components](https://github.com/CarlosCarballido/python-components)  
 Branch: `default`
 
 ### Unit Tests Executed
 
-- ConfigUtilTest
-- DataUtilTest
-- DeviceManagerTest
+- ConfigUtilTest.py
+- SystemCpuUtilTaskTest.py
+- SystemMemUtilTaskTest.py
+- DataUtilTest.py
+- SensorDataTest.py
+- BaseIotDataTest.py
+- ActuatorDataTest.py
 
 ### Integration Tests Executed
 
-- SensorSimAdapterManagerTest
-- DeviceDataManagerTest
-- CloudConnectivityTest
+- ConstrainedDeviceAppTest.py
+- DeviceDataManagerWithCommsTest.py
+- DeviceDataManagerIntegrationTest.py
+- DeviceDataManagerWithMqttClientOnlyTest.py
+- DeviceDataManagerCallbackTest.py
+- MqttClientConnectorTest.py
+- CoapClientConnectorTest.py
+- CoapClientPerformanceTest.py
+- CoapServerAdapterTest.py
+- SensorAdapterManagerTest.py
+- ActuatorAdapterManagerTest.py
+- DataIntegrationTest.py
+- SensorPerformanceDataTest.py
+- TemperatureEmulatorTaskTest.py
+- SensorEmulatorManagerTest.py
+- HumidityEmulatorTaskTest.py
+- PressureEmulatorTaskTest.py
+- ActuatorEmulatorManagerTest.py
+- ActuatorSimTaskTest.py
+- TemperatureSensorSimTaskTest.py
+- HumidifierActuatorSimTaskTest.py
+- PressureSensorSimTaskTest.py
+- HumiditySensorSimTaskTest.py
 
 EOF.
