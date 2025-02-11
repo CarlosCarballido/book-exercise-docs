@@ -1,33 +1,40 @@
-# Constrained Device Application (Connected Devices)
+# Gateway Device Application (Connected Devices)
 
 ## Lab Module 01
 
-Be sure to implement all the PIOT-CDA-* issues (requirements).
+Be sure to implement all the PIOT-GDA-* issues (requirements).
 
 ### Description
 
-The Constrained Device Application (CDA) is responsible for collecting, processing, and transmitting data from resource-limited IoT devices. 
-It typically runs on embedded systems or edge devices that have limited processing power, memory, and network bandwidth.
+The Gateway Device Application (GDA) acts as a bridge between constrained IoT devices and cloud-based services. 
+It collects, processes, and forwards data from constrained devices, ensuring efficient communication and data management.
+This implementation includes setting up communication protocols, handling device interactions, and enabling reliable 
+data transmission between sensors, actuators, and cloud platforms.
 
-The implementation focuses on efficient data acquisition, lightweight communication protocols (such as MQTT or CoAP), 
-and optimized resource management. The CDA interacts with sensors and actuators to monitor environmental conditions 
-and send real-time data to the Gateway Device Application (GDA) or directly to cloud services.
+The GDA is developed in Java and includes modules for device management, data transformation, and connectivity 
+with external cloud services. The system ensures proper logging, error handling, and scalability to accommodate 
+various IoT scenarios.
 
 ### Code Repository and Branch
 
-URL: [https://github.com/CarlosCarballido/python-components](https://github.com/CarlosCarballido/python-components)  
+URL: [https://github.com/CarlosCarballido/java-components](https://github.com/CarlosCarballido/java-components)  
 Branch: `default`
 
 ### Unit Tests Executed
 
 - ConfigUtilTest
-- DataUtilTest
-- SensorManagerTest
+- GatewayDeviceAppTest
+- SystemCpuUtilTaskTest
+- SystemMemUtilTaskTest
+- ResourceNameTest
 
 ### Integration Tests Executed
 
-- SensorSimAdapterManagerTest
 - DeviceDataManagerTest
-- CloudConnectivityTest
+- CloudClientConnectorTest
+- MqttClientConnectorTest
+- CoapClientConnectorTest
+- SensorDataTest
+- DataIntegrationTest
 
 EOF.
