@@ -6,53 +6,41 @@ Be sure to implement all the PIOT-CDA-* issues (requirements).
 
 ### Description
 
-The Constrained Device Application (CDA) is designed for IoT devices with limited resources. 
-It is responsible for collecting sensor data, processing it locally, and sending relevant information to 
-the Gateway Device Application (GDA) or cloud services. The CDA ensures efficient resource management and uses 
-lightweight communication protocols like MQTT or CoAP for data transmission.
+NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-This implementation is developed in Python and focuses on optimizing sensor interactions, handling real-time data 
-processing, and providing a reliable connection between edge devices and the broader IoT network.
+What does your implementation do? 
+Configuración del entorno, clonación de los repositorios. Instalar oaquetes y dependencias, preparar el entorno de desarrollo para comenzar a trabajar. Ejecuto los tests unitarios y de integración para asegurarme de que todo esté funcionando como debería.
+
+How does your implementation work?
+Actualicé el DEFAULT_CONFIG_FILE_NAME para que todo funcione correctamente. Creé un virtual enviroment e instalé las dependencias ahí.
+Los tests se ejecutan correctamente.
+
 
 ### Code Repository and Branch
 
-URL: [https://github.com/CarlosCarballido/python-components](https://github.com/CarlosCarballido/python-components)  
-Branch: `default`
+NOTE: Be sure to include the branch 
+
+URL: https://github.com/CarlosCarballido/python-components/tree/labmodule01
 
 ### Unit Tests Executed
 
-- ConfigUtilTest.py
-- SystemCpuUtilTaskTest.py
-- SystemMemUtilTaskTest.py
-- DataUtilTest.py
-- SensorDataTest.py
-- BaseIotDataTest.py
-- ActuatorDataTest.py
+NOTE: The instructor will execute your unit tests. You only need to list each test case below
+(e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
+since you need to ensure you haven't introduced regressions.
+
+- ConfigUtilTest
+- 
+- 
 
 ### Integration Tests Executed
 
-- ConstrainedDeviceAppTest.py
-- DeviceDataManagerWithCommsTest.py
-- DeviceDataManagerIntegrationTest.py
-- DeviceDataManagerWithMqttClientOnlyTest.py
-- DeviceDataManagerCallbackTest.py
-- MqttClientConnectorTest.py
-- CoapClientConnectorTest.py
-- CoapClientPerformanceTest.py
-- CoapServerAdapterTest.py
-- SensorAdapterManagerTest.py
-- ActuatorAdapterManagerTest.py
-- DataIntegrationTest.py
-- SensorPerformanceDataTest.py
-- TemperatureEmulatorTaskTest.py
-- SensorEmulatorManagerTest.py
-- HumidityEmulatorTaskTest.py
-- PressureEmulatorTaskTest.py
-- ActuatorEmulatorManagerTest.py
-- ActuatorSimTaskTest.py
-- TemperatureSensorSimTaskTest.py
-- HumidifierActuatorSimTaskTest.py
-- PressureSensorSimTaskTest.py
-- HumiditySensorSimTaskTest.py
+NOTE: The instructor will execute most of your integration tests using their own environment, with
+some exceptions (such as your cloud connectivity tests). In such cases, they'll review
+your code to ensure it's correct. As for the tests you execute, you only need to list each
+test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
+
+- ConstrainedDeviceAppTest
+- 
+- 
 
 EOF.
