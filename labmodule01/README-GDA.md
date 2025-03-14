@@ -17,24 +17,18 @@ various IoT scenarios.
 
 ### Code Repository and Branch
 
-URL: [https://github.com/CarlosCarballido/java-components](https://github.com/CarlosCarballido/java-components)  
-Branch: `default`
+URL: https://github.com/CarlosCarballido/java-components/tree/labmodule01
 
 ### Unit Tests Executed
 
 - ConfigUtilTest
-- GatewayDeviceAppTest
-- SystemCpuUtilTaskTest
-- SystemMemUtilTaskTest
-- ResourceNameTest
+- 
+- 
 
 ### Integration Tests Executed
 
-- DeviceDataManagerTest
-- CloudClientConnectorTest
-- MqttClientConnectorTest
-- CoapClientConnectorTest
-- SensorDataTest
-- DataIntegrationTest
+- GatewayDeviceAppTest
+- 
+- 
 
 EOF.
