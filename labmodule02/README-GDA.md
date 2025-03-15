@@ -21,7 +21,7 @@ Tanto SystemMemUtilTask como SystemCpuUtilTask heredan de BaseSystemUtilTask. Es
 
 How does your implementation work?
 
-    Al ejecutar mvn test -Dtest=GatewayDeviceAppTest, se produce un fallo en PIOT-GDA-02-003. Aunque el código se ejecuta, Maven arroja un extenso error en el stacktrace. Sin embargo, al desactivar los tests en el archivo pom.xml, el código funciona correctamente.
+Al ejecutar mvn test -Dtest=GatewayDeviceAppTest, se produce un fallo en PIOT-GDA-02-003. Aunque el código se ejecuta, Maven arroja un extenso error en el stacktrace. Sin embargo, al desactivar los tests en el archivo pom.xml, el código funciona correctamente.
 
 ### Code Repository and Branch
 
