@@ -8,16 +8,19 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed.
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do?
+
+La implementación incorpora soporte para un sensor de gases y un ventilador actuador en el CDA, generando datos simulados que se transmiten mediante MQTT. Además, cuenta con un sensor de luz virtual cuyo ventilador se controla activándose o desactivándose en función de los comandos recibidos desde el GDA.
 
 How does your implementation work?
+
+La implementación consiste en crear tareas emuladoras para el sensor de gas, el ventilador y el sensor de luz. Estos simuladores generan datos y transmiten la información al GDA a través de MQTT o CoAP, siguiendo la misma lógica e integración que los demás dispositivos emulados.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
-
+URL: <https://github.com/CarlosCarballido/python-components/tree/labmodule-12>
 
 ### Unit Tests Executed
 
