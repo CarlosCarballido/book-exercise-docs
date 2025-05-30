@@ -30,13 +30,7 @@ Include a high-level design diagram depicting your planned technical approach - 
 
 Write 1 to 2 paragraphs describing your diagram.
 
-+----------------+      MQTT/TLS      +----------------+      MQTT/TLS      +----------------+
-|      CDA       | <----------------> |      GDA       | <----------------> |     Nube       |
-| (Sensor y Act.)|                   | (Procesamiento)|                   | (Ubidots,      |
-|                |                   |                |                   |  visualización)|
-+----------------+                   +----------------+                   +----------------+
-         ↑                                    ↓                                    ↑
-         |-------- Comandos Actuador ---------|
+![alt text](image.png)
 
 La solución técnica consiste en desarrollar un emulador de sensor de gases que genere lecturas simuladas pero realistas, acompañado de un actuador que represente un ventilador. Este actuador se activa automáticamente cuando los niveles de gas superan un umbral predefinido.
 
